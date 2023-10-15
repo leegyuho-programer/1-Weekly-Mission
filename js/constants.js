@@ -1,6 +1,7 @@
 export {
   REG_EXP, 
   DB_USERS,
+  API_URL,
 }
 
 const REG_EXP = {
