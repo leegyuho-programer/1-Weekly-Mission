@@ -1,11 +1,11 @@
 import styles from '../styles/Main.module.css';
-import Cards from './Cards.js';
-import Search from './Search.js';
-import FolderInfo from './FolderInfo.js';
+import Cards from '../components/Cards.js';
+import Search from '../components/Search.js';
+import FolderInfo from '../components/FolderInfo.js';
 import { getFolders } from '../api/getFolders.js';
 import { useState, useEffect } from 'react';
 
-function Main() {
+function Shared() {
   const [folderData, setFolderData] = useState([]);
 
   const handleLoadFolderData = async () => {
@@ -29,4 +29,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default Shared;

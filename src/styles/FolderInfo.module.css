@@ -1,0 +1,57 @@
+.root {
+  padding: 20px 624px 60px 624px;
+  background: var(--linkbrary-bg, #f0f6ff);
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.profileImageContainer {
+  margin: 20px 0 12px;
+  width: 60px;
+  height: 60px;
+}
+
+.profileImage {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.name {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000;
+}
+
+.title {
+  margin-top: 20px;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #000;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .profileImage {
+    width: 40px;
+    border-radius: 50%;
+  }
+
+  .name {
+    font-size: 14px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+}

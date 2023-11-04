@@ -1,0 +1,21 @@
+.profileImage {
+  flex-shrink: 0;
+  width: 10px;
+  height: 10px;
+}
+
+.profileEmail {
+  /* Linkbrary/body2-regular */
+  font-family: Pretendard;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #373740;
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .profileEmail {
+    display: none;
+  }
+}
