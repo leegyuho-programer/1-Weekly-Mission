@@ -1,8 +1,8 @@
-import styles from '../styles/UserDataInfo.module.css';
-import useAsync from './../hooks/useAsync';
-import getUser from '../api/getUser';
+import styles from './UserDataInfo.module.css';
+import useAsync from '../../hooks/useAsync';
+import getUser from '../../api/getUser';
 import { useState, useEffect } from 'react';
-import LoginButton from './LoginButton';
+import LoginButton from '../LoginButton/LoginButton';
 
 const UserDataInfo = () => {
   const [isLoading, , getUserAsync] = useAsync(getUser);

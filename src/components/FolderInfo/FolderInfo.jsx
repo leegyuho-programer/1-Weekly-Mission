@@ -1,4 +1,4 @@
-import styles from '../styles/FolderInfo.module.css';
+import styles from './FolderInfo.module.css';
 
 function FolderInfo({ folderData }) {
   if (folderData && folderData.folder) {

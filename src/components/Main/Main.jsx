@@ -1,8 +1,8 @@
-import styles from '../styles/Main.module.css';
-import Cards from './Cards';
-import Search from './Search';
-import FolderInfo from './FolderInfo';
-import getFolder from '../api/getFolder';
+import styles from './Main.module.css';
+import Cards from '../Cards/Cards';
+import Search from '../Search/Search';
+import FolderInfo from '../FolderInfo/FolderInfo';
+import getFolder from '../../api/getFolder';
 import { useState, useEffect } from 'react';
 
 function Main() {

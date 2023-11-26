@@ -1,6 +1,6 @@
 import React from 'react';
-import searchImage from '../assets/images/icons/Search.png';
-import styles from '../styles/Search.module.css';
+import searchImage from '../../assets/images/icons/Search.png';
+import styles from './Search.module.css';
 
 function Search() {
   return (

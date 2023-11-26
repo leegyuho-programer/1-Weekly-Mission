@@ -1,5 +1,5 @@
-import AddLink from '../components/AddLink';
-import Search from '../components/Search';
+import AddLink from '../components/AddLink/AddLink';
+import Search from '../components/Search/Search';
 
 function Folder() {
   return (

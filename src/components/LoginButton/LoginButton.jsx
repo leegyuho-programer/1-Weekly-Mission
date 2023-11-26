@@ -1,4 +1,4 @@
-import styles from '../styles/LoginButton.module.css';
+import styles from './LoginButton.module.css';
 
 function LoginButton({ text }) {
   return (

@@ -1,6 +1,6 @@
 import React from 'react';
-import CardItem from './CardItem';
-import styles from '../styles/Cards.module.css';
+import CardItem from '../CardItem/CardItem';
+import styles from './Cards.module.css';
 
 const Card = ({ folderData }) => {
   if (folderData && folderData.folder) {

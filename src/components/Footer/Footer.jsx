@@ -1,10 +1,9 @@
-import facebookImage from '../assets/images/icons/facebook.png';
-import twitterImage from '../assets/images/icons/twitter.png';
-import youtubeImage from '../assets/images/icons/youtube.png';
-import instagramImage from '../assets/images/icons/instagram.png';
-import IconButton from './IconButton';
-
-import styles from '../styles/Footer.module.css';
+import facebookImage from '../../assets/images/icons/facebook.png';
+import twitterImage from '../../assets/images/icons/twitter.png';
+import youtubeImage from '../../assets/images/icons/youtube.png';
+import instagramImage from '../../assets/images/icons/instagram.png';
+import IconButton from '../IconButton/IconButton';
+import styles from './Footer.module.css';
 
 const SOCIAL_LINKS = [
   {

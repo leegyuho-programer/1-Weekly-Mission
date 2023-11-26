@@ -1,7 +1,7 @@
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import './styles/reset.css';
 import styles from './styles/App.module.css';
-import Layout from './components/Layout';
+import Layout from './components/Layout/Layout';
 import Folder from './pages/Folder';
 import Shared from './pages/Shared';
 
