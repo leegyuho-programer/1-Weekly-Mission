@@ -7,13 +7,13 @@ import LoginButton from './LoginButton';
 const UserDataInfo = () => {
   const [isLoading, , getUserAsync] = useAsync(getUser);
   const [userInfo, setUserInfo] = useState(null);
-  const loadUserInfo = async () => {
+  const loadUser = async () => {
     const userInfo = await getUserAsync({ id: 1 });
     setUserInfo(userInfo);
   };
 
   useEffect(() => {
-    loadUserInfo();
+    loadUser();
   }, []);
 
   return isLoading ? (
@@ -25,7 +25,7 @@ const UserDataInfo = () => {
         src={userInfo.image_source}
         alt='프로필'
       />
-      <span className={styles.profileEmail}>{userInfo.email}</span>
+      <div className={styles.profileEmail}>{userInfo.email}</div>
     </div>
   ) : (
     <LoginButton text='로그인' />

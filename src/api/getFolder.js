@@ -1,11 +1,8 @@
-import API from './api';
+import requestAPI from './api';
 
 const getFolder = async ({ id }) => {
-  const response = await fetch(`${API.users}/${id}/folders`);
-  if (!response.ok) {
-    return null;
-  }
-  const data = await response.json();
+  const { data } = await requestAPI(`users/${id}/folders`);
+
   return data;
 };
 

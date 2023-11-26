@@ -1,19 +1,16 @@
 .root {
-  height: 160px;
-
   display: flex;
   justify-content: center;
-
+  height: 160px;
   background-color: #111322;
 }
 
 .container {
-  width: 100%;
-
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  flex-direction: row;
   padding: 32px 104px 64px 104px;
+  width: 100%;
 }
 
 .copyright {
@@ -33,14 +30,13 @@
 
 .information a {
   padding-right: 18px;
-  text-decoration: none;
   color: #676767;
+  text-decoration: none;
 }
 
 .sns {
-  height: 20px;
-
   display: inline-block;
+  height: 20px;
 }
 
 .sns a {
@@ -52,17 +48,17 @@
 
 @media screen and (min-width: 375px) and (max-width: 767px) {
   .root {
-    width: 100%;
     margin-top: 4rem;
+    width: 100%;
   }
 
   .container {
     display: grid;
+    padding: 0 3.2rem;
     grid-template:
       'links sns'
       '. .'
       'copyright .';
-    padding: 0 3.2rem;
   }
 
   .information {

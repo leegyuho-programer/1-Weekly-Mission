@@ -1,21 +1,23 @@
 .container {
   display: flex;
+  gap: 9px;
   align-items: center;
-  gap: 6px;
+  font-size: 14px;
 }
 
 .profileImage {
-  width: 10px;
-  height: 10px;
-
-  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 47px;
 }
 
-.profileEmail {
+/* .profileEmail {
   color: #373740;
   font-family: Pretendard;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-}
+  width: 124px;
+  height: 17px;
+} */
