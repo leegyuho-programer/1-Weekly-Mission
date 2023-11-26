@@ -1,18 +1,13 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import './styles/reset.css';
 import styles from './styles/App.module.css';
-import Layout from './components/Layout.js';
-import Folder from './pages/Folder.js';
-import Shared from './pages/Shared.js';
-import { AccountContext } from './context/AccountContext.js';
-import { useFetch } from './hooks/useFetch.js';
+import Layout from './components/Layout';
+import Folder from './pages/Folder';
+import Shared from './pages/Shared';
 
 function App() {
-  const { data: userData } = useFetch('users/1', 1);
-  if (!userData) return;
-
   return (
-    <AccountContext.Provider value={{ account: userData.data[0] }}>
+    <BrowserRouter>
       <div className={styles.container}>
         <Routes>
           <Route path='/' element={<Layout />}>
@@ -24,7 +19,7 @@ function App() {
           </Route>
         </Routes>
       </div>
-    </AccountContext.Provider>
+    </BrowserRouter>
   );
 }
 

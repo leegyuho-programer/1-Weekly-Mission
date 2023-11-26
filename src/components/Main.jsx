@@ -1,8 +1,8 @@
 import styles from '../styles/Main.module.css';
-import Cards from './Cards.js';
-import Search from './Search.js';
-import FolderInfo from './FolderInfo.js';
-import getFolders from '../api/getFolders.js';
+import Cards from './Cards';
+import Search from './Search';
+import FolderInfo from './FolderInfo';
+import getFolder from '../api/getFolder';
 import { useState, useEffect } from 'react';
 
 function Main() {
@@ -10,7 +10,7 @@ function Main() {
 
   const handleLoadFolderData = async () => {
     try {
-      setFolderData(await getFolders());
+      setFolderData(await getFolder());
     } catch (error) {
       console.error(error);
     }

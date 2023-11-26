@@ -2,11 +2,11 @@ import facebookImage from '../assets/images/icons/facebook.png';
 import twitterImage from '../assets/images/icons/twitter.png';
 import youtubeImage from '../assets/images/icons/youtube.png';
 import instagramImage from '../assets/images/icons/instagram.png';
-import IconButton from './IconButton.js';
+import IconButton from './IconButton';
 
 import styles from '../styles/Footer.module.css';
 
-const footerSocialLinks = [
+const SOCIAL_LINKS = [
   {
     href: 'https://www.facebook.com/',
     iconUrl: facebookImage,
@@ -43,7 +43,7 @@ function Footer() {
           <a href='none'>FAQ</a>
         </div>
         <div className={styles.sns}>
-          {footerSocialLinks.map((link) => (
+          {SOCIAL_LINKS.map((link) => (
             <IconButton key={link.href} link={link} />
           ))}
         </div>

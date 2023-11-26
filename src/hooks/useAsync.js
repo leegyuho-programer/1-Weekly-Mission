@@ -1,23 +1,21 @@
 import { useState } from 'react';
 
-function useAsync(asyncFunction) {
-  const [pending, setPending] = useState(false);
+function useAsync(fetchFunction) {
+  const [isLoading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  const wrappedFunction = async (...args) => {
+  const wrappedFunction = async (param) => {
+    setLoading(true);
     try {
-      setError(null);
-      setPending(true);
-      return await asyncFunction(...args);
+      const response = await fetchFunction(param);
+      return response;
     } catch (error) {
       setError(error);
-      return;
     } finally {
-      setPending(false);
+      setLoading(false);
     }
   };
-
-  return [pending, error, wrappedFunction];
+  return [isLoading, error, wrappedFunction];
 }
 
 export default useAsync;

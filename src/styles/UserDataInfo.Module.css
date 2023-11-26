@@ -1,3 +1,9 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
 .profileImage {
   width: 10px;
   height: 10px;
@@ -7,16 +13,9 @@
 
 .profileEmail {
   color: #373740;
-  /* Linkbrary/body2-regular */
   font-family: Pretendard;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-}
-
-@media screen and (min-width: 375px) and (max-width: 767px) {
-  .profileEmail {
-    display: none;
-  }
 }

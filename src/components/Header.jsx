@@ -1,6 +1,6 @@
 import styles from '../styles/Header.module.css';
 import logoImage from '../assets/images/logo/logo.png';
-import LoginButton from './LoginButton.js';
+import UserDataInfo from './UserDataInfo';
 
 function Header() {
   return (
@@ -11,7 +11,7 @@ function Header() {
             <img src={logoImage} alt='LinkBrary logo' />
           </a>
         </div>
-        <LoginButton />
+        <UserDataInfo />
       </div>
     </header>
   );
