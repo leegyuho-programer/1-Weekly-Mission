@@ -1,7 +1,7 @@
 import requestAPI from './api';
 
-const getFolder = async ({ id }) => {
-  const { data } = await requestAPI(`users/${id}/folders`);
+const getFolder = async ({ folderID }) => {
+  const { data } = await requestAPI(`users/${folderID}/folders`);
 
   return data;
 };

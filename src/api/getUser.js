@@ -1,7 +1,7 @@
 import requestAPI from './api';
 
-const getUser = async ({ id }) => {
-  const { data } = await requestAPI(`users/${id}`);
+const getUser = async ({ userID }) => {
+  const { data } = await requestAPI(`users/${userID}`);
 
   return data;
 };

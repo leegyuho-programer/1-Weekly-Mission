@@ -8,7 +8,7 @@ const UserDataInfo = () => {
   const [isLoading, , getUserAsync] = useAsync(getUser);
   const [userInfo, setUserInfo] = useState(null);
   const loadUser = async () => {
-    const userInfo = await getUserAsync({ id: 1 });
+    const userInfo = await getUserAsync({ userID: 1 });
     setUserInfo(userInfo);
   };
 
