@@ -2,7 +2,7 @@ import React from 'react';
 import CardItem from '../CardItem/CardItem';
 import styles from './Cards.module.css';
 
-const Card = ({ folderData }) => {
+const Cards = ({ folderData }) => {
   if (folderData && folderData.folder) {
     const { folder } = folderData;
     const { links } = folder;
@@ -21,4 +21,4 @@ const Card = ({ folderData }) => {
   }
 };
 
-export default Card;
+export default Cards;
