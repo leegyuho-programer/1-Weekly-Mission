@@ -1,5 +1,4 @@
 import styles from './AddLink.module.css';
-import React from 'react';
 import linkIcon from '../../assets/images/icons/link.png';
 
 const AddLink = () => {

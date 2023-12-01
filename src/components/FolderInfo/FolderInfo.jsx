@@ -1,6 +1,6 @@
 import styles from './FolderInfo.module.css';
 
-function FolderInfo({ owner, name }) {
+function FolderInfo({ folderInfo: { owner, name } }) {
   return (
     owner && (
       <div className={styles.root}>

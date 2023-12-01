@@ -5,10 +5,10 @@ import { useState, useEffect } from 'react';
 import LoginButton from '../LoginButton/LoginButton';
 
 const UserDataInfo = () => {
-  const [isLoading, , getUserAsync] = useAsync(getUser);
   const [userInfo, setUserInfo] = useState(null);
+  const [isLoading, , getUserAsync] = useAsync(getUser);
   const loadUser = async () => {
-    const userInfo = await getUserAsync({ userID: 1 });
+    const userInfo = await getUserAsync({ id: 1 });
     setUserInfo(userInfo);
   };
 
